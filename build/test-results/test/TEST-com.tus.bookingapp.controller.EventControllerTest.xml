@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tus.bookingapp.controller.EventControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-03-25T18:44:40.281Z" hostname="Lukes-MacBook-Pro.local" time="2.327">
+  <properties/>
+  <testcase name="createEvent_WithBlankArtist_Returns400BadRequest()" classname="com.tus.bookingapp.controller.EventControllerTest" time="0.282"/>
+  <testcase name="bookTicket_AlreadySold_Returns409Conflict()" classname="com.tus.bookingapp.controller.EventControllerTest" time="0.019"/>
+  <testcase name="getEvent_WithNonExistentId_Returns404NotFound()" classname="com.tus.bookingapp.controller.EventControllerTest" time="0.006"/>
+  <system-out><![CDATA[18:44:40.412 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tus.bookingapp.controller.EventControllerTest]: EventControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:44:40.513 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tus.bookingapp.BookingappApplication for test class com.tus.bookingapp.controller.EventControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.2)
+
+2026-03-25T18:44:40.778Z  INFO 89822 --- [bookingapp] [    Test worker] c.t.b.controller.EventControllerTest     : Starting EventControllerTest using Java 21.0.10 with PID 89822 (started by lukemorton in /Users/lukemorton/Desktop/MSc/Semester Two/Continuous Build and Delivery/Assignment One/tus-microservice-bookingapp)
+2026-03-25T18:44:40.779Z  INFO 89822 --- [bookingapp] [    Test worker] c.t.b.controller.EventControllerTest     : No active profile set, falling back to 1 default profile: "default"
+2026-03-25T18:44:42.257Z  INFO 89822 --- [bookingapp] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-25T18:44:42.257Z  INFO 89822 --- [bookingapp] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-25T18:44:42.259Z  INFO 89822 --- [bookingapp] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-25T18:44:42.290Z  INFO 89822 --- [bookingapp] [    Test worker] c.t.b.controller.EventControllerTest     : Started EventControllerTest in 1.729 seconds (process running for 2.626)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/lukemorton/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

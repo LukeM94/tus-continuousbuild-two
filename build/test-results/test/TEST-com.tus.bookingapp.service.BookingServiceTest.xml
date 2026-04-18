@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tus.bookingapp.service.BookingServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-03-25T18:44:42.620Z" hostname="Lukes-MacBook-Pro.local" time="0.243">
+  <properties/>
+  <testcase name="createEvent_saveAndReturnEent()" classname="com.tus.bookingapp.service.BookingServiceTest" time="0.161"/>
+  <testcase name="Should throw TicketNotFoundException when ticket doesn't exist" classname="com.tus.bookingapp.service.BookingServiceTest" time="0.003"/>
+  <testcase name="updateEvent_existingEventUpdatesAndReturns()" classname="com.tus.bookingapp.service.BookingServiceTest" time="0.002"/>
+  <testcase name="bookTicket_EventNotFound_ThrowsEventNotFoundException()" classname="com.tus.bookingapp.service.BookingServiceTest" time="0.001"/>
+  <testcase name="Should successfully book a ticket (Happy Path)" classname="com.tus.bookingapp.service.BookingServiceTest" time="0.07"/>
+  <testcase name="deleteEvent_existingEventCallsDelete()" classname="com.tus.bookingapp.service.BookingServiceTest" time="0.001"/>
+  <testcase name="Should throw TicketNotFoundException when ticket belongs to a different event" classname="com.tus.bookingapp.service.BookingServiceTest" time="0.001"/>
+  <testcase name="getEvent_existingEventReturnsEvent()" classname="com.tus.bookingapp.service.BookingServiceTest" time="0.001"/>
+  <testcase name="Should throw TicketAlreadySoldException when ticket is already sold" classname="com.tus.bookingapp.service.BookingServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

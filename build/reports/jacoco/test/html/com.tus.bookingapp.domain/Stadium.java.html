@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Stadium.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">bookingapp</a> &gt; <a href="index.source.html" class="el_package">com.tus.bookingapp.domain</a> &gt; <span class="el_source">Stadium.java</span></div><h1>Stadium.java</h1><pre class="source lang-java linenums">package com.tus.bookingapp.domain;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Stadium {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(unique = true, nullable = false)
+    private String name;
+    private int capacity;
+    private boolean hasRoof;
+
+<span class="nc" id="L17">    public Stadium() {</span>
+<span class="nc" id="L18">    }</span>
+
+<span class="nc" id="L20">    public Stadium(String name, int capacity, boolean hasRoof) {</span>
+<span class="nc" id="L21">        this.name = name;</span>
+<span class="nc" id="L22">        this.capacity = capacity;</span>
+<span class="nc" id="L23">        this.hasRoof = hasRoof;</span>
+<span class="nc" id="L24">    }</span>
+
+    public Long getId() {
+<span class="nc" id="L27">        return id;</span>
+    }
+
+    public void setId(Long id) {
+<span class="nc" id="L31">        this.id = id;</span>
+<span class="nc" id="L32">    }</span>
+
+    public String getName() {
+<span class="nc" id="L35">        return name;</span>
+    }
+
+    public void setName(String name) {
+<span class="nc" id="L39">        this.name = name;</span>
+<span class="nc" id="L40">    }</span>
+
+    public int getCapacity() {
+<span class="nc" id="L43">        return capacity;</span>
+    }
+
+    public void setCapacity(int capacity) {
+<span class="nc" id="L47">        this.capacity = capacity;</span>
+<span class="nc" id="L48">    }</span>
+
+    public boolean isHasRoof() {
+<span class="nc" id="L51">        return hasRoof;</span>
+    }
+
+    public void setHasRoof(boolean hasRoof) {
+<span class="nc" id="L55">        this.hasRoof = hasRoof;</span>
+<span class="nc" id="L56">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.14.202510111229</span></div></body></html>
