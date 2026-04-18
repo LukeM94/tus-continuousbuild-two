@@ -3,6 +3,14 @@ plugins {
     id 'org.springframework.boot' version '4.0.2'
     id 'io.spring.dependency-management' version '1.1.7'
     id 'jacoco'
+    id 'org.sonarqube' version '7.2.3.7755'
+}
+
+sonar {
+    properties {
+        property "sonar.projectKey", "lukem94_tus-continuousbuild-two"
+        property "sonar.organization", "lukemorton"
+    }
 }
 
 group = 'com.tus'
@@ -41,6 +49,7 @@ jacocoTestReport {
     dependsOn test
     reports {
         html.required = true
+        xml.required = true
     }
 }
 
