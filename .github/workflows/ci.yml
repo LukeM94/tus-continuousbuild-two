@@ -53,10 +53,10 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: ./gradlew sonar -Dsonar.qualitygate.wait=true --no-daemon
 
-      - name: Build Docker Image
+      - name: Test Docker Build
         run: docker build -t bookingapp:latest .
 
-      - name: Deploy Container
+      - name: Smoke Test Container
         run: |
           docker rm -f bookingapp || true
           docker run -d --name bookingapp -p 8080:8080 bookingapp:latest
